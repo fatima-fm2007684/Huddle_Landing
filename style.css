@@ -1,0 +1,42 @@
+* {
+  font-family: 'Open Sans';
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+:root {
+  --pink: hsl(300, 69%, 71%);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  
+}
+.logo {
+  color: black;
+  width: 10rem;
+  fill: black;
+}
+nav {
+  display: flex;
+}
+button {
+  border-radius: 12px;
+  border: none;
+  color: white;
+  background-color: var(--pink);
+  padding: 1rem 1.5rem;
+  /* box-shadow: inset; */
+}
+button:hover {
+  background-color: rgb(158, 155, 155);
+}
+.top-button {
+  border: 2px solid var(--pink);
+  color: var(--pink);
+  width: 10rem;
+  background-color: white;
+}
+header{
+  display: flex;
+  
+}
