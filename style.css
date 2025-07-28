@@ -11,7 +11,11 @@
 body {
   display: flex;
   flex-direction: column;
+  gap: 3rem;
   margin: 2rem 1rem;
+}
+p {
+  font-size: 0.75rem;
 }
 .logo {
   color: black;
@@ -28,8 +32,10 @@ button {
   border: none;
   color: white;
   background-color: hsl(322, 98.9%, 65.9%);
-  padding: 1rem 1.5rem;
-  /* box-shadow: inset; */
+  padding: 0.5rem 2.5rem;
+  box-shadow: 0 0.3rem 0.3rem rgb(194, 194, 194);
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 button:hover {
   background-color: rgb(158, 155, 155);
@@ -40,15 +46,58 @@ button:hover {
   padding: 0.1rem 1rem;
   background-color: white;
   font-size: 0.5rem;
+  box-shadow: none;
 }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
   /* padding: 1rem; */
 }
 h2 {
   margin: 2rem auto 0rem;
   /* does the top margin of header need to be big? */
+}
+img {
+  padding: 2rem 0rem;
+  width: 90%;
+}
+.stats_div {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.stats {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+}
+.stats img {
+  width: 1.5rem;
+  padding: 0;
+}
+.stats h1 {
+  margin: 0;
+  text-align: left;
+  font-size: 3rem;
+}
+.stats p {
+  margin: 0;
+  text-align: center;
+
+  font-size: 0.7rem;
+  color: rgb(100, 100, 100);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+h3.call_to_action {
+  font-weight: 900;
+  font-size: 1.2rem;
+  margin: 0.5rem;
 }
