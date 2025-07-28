@@ -1,7 +1,9 @@
 * {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
   box-sizing: border-box;
+  text-align: center;
+  color: hsl(195, 100%, 9.4%);
 }
 :root {
   --pink: hsl(300, 69%, 71%);
@@ -9,21 +11,23 @@
 body {
   display: flex;
   flex-direction: column;
-  
+  margin: 2rem 1rem;
 }
 .logo {
   color: black;
-  width: 10rem;
+  width: 5rem;
   fill: black;
 }
-nav {
+header {
   display: flex;
+  justify-content: space-between;
 }
+
 button {
-  border-radius: 12px;
+  border-radius: 10rem;
   border: none;
   color: white;
-  background-color: var(--pink);
+  background-color: hsl(322, 98.9%, 65.9%);
   padding: 1rem 1.5rem;
   /* box-shadow: inset; */
 }
@@ -31,12 +35,20 @@ button:hover {
   background-color: rgb(158, 155, 155);
 }
 .top-button {
-  border: 2px solid var(--pink);
+  border: 1px solid var(--pink);
   color: var(--pink);
-  width: 10rem;
+  padding: 0.1rem 1rem;
   background-color: white;
+  font-size: 0.5rem;
 }
-header{
+
+main {
   display: flex;
-  
+  flex-direction: column;
+  align-items: center;
+  /* padding: 1rem; */
+}
+h2 {
+  margin: 2rem auto 0rem;
+  /* does the top margin of header need to be big? */
 }
